@@ -55,7 +55,7 @@ create_gmsh_mesh(file=mesh, mesh="volume3d")
 add_gmsh_region( mesh="volume3d" , gmsh_name="Bulk" , region="Bulk" , material="Silicon")
 finalize_mesh( mesh="volume3d")
 create_device( mesh="volume3d" , device="resistor3d")
-write_devices( file="gmsh_resistor3d_out.msh")
+#write_devices( file="gmsh_resistor3d_out.msh")
 
 device="resistor3d"
 region="Bulk"
