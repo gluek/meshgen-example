@@ -48,9 +48,9 @@ def calculations_for_tet(index):
         radius = numpy.linalg.norm(v)
     return xs, ys, zs, radius, foo
 
-#mesh="./Out/nVolume_contacts_scaling_1.msh"
+mesh="./Out/nVolume_contacts_scaling_1.msh"
 #mesh="./Out/nVolume_contacts_scaling_1e-5.msh"
-mesh="./Out/nVolume_contacts_scaling_10.msh"
+#mesh="./Out/nVolume_contacts_scaling_10.msh"
 
 create_gmsh_mesh(file=mesh, mesh="volume3d")
 add_gmsh_region( mesh="volume3d" , gmsh_name="Bulk" , region="Bulk" , material="Silicon")
