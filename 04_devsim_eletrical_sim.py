@@ -41,10 +41,10 @@ def print_all_currents():
 device = "nVolume"
 region = "Bulk"
 
-diode_common.Create3DGmshMesh(device, region, "./Out/nVolume_contacts.msh")
+diode_common.Create3DGmshMesh(device, region, "./Out/nVolume_contacts_scaling_1.msh.msh")
 
 diode_common.SetParameters(device=device, region=region)
-set_parameter(device=device, region=region, name="mu_n", value=1e5)
+set_parameter(device=device, region=region, name="mu_n", value=1)
 set_parameter(device=device, region=region, name="mu_p", value=1)
 
 # this is the devsim format

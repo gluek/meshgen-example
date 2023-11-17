@@ -22,9 +22,15 @@ contact_diodeB = gmsh.model.addPhysicalGroup(2, [id_surf_bot], 3, "bot")
 gmsh.model.occ.synchronize()
 
 gmsh.option.setNumber("Mesh.MshFileVersion", 2.2)
-gmsh.option.setNumber("Mesh.ScalingFactor", 1.0e-5)
 
-gmsh.write("./Out/nVolume_contacts.msh")
+gmsh.option.setNumber("Mesh.ScalingFactor", 1.0)
+gmsh.write("./Out/nVolume_contacts_scaling_1.msh")
+
+gmsh.option.setNumber("Mesh.ScalingFactor", 1.0e-5)
+gmsh.write("./Out/nVolume_contacts_scaling_1e-5.msh")
+
+gmsh.option.setNumber("Mesh.ScalingFactor", 10.0)
+gmsh.write("./Out/nVolume_contacts_scaling_10.msh")
 
 if plot:
     # Launch the GUI to see the results:
