@@ -1,14 +1,13 @@
-#######
 MeshGenExample
-#######
+###############
 
 Description
-===========
+============
 This project is a meshing example based on gmsh and tetgen
 which is targeted at a mesh suitable for devsim device simulation in 3D.
 
 Recommended Usage
-===========
+==================
 
 Execute the scripts in order of the enumeration.
 
